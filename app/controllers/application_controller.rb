@@ -10,6 +10,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post "/" do
+    @order = params[:]
     erb :results
   end
 end
