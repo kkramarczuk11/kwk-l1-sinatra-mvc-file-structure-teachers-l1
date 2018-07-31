@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post "/" do
-    @order = params[:vegetable]
+    @order = params[:broth]
     erb :results
   end
 end
